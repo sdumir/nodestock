@@ -1,2 +1,11 @@
-<h1>This is my Handlebars Hompeage ... </h1>
-<p>{{ stuff}}</p>
+{{ posted_stuff}}
+<br/>
+<h1>{{ stock.companyName }} ({{ stock.symbol }})</h1>
+<br/>
+{{stock.latestPrice}}
+
+<br/>
+
+{{#each stock}}
+	{{@key}} | {{this}}<br/>
+{{/each}}
